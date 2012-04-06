@@ -1,0 +1,13 @@
+{
+	"name": "raw-loader",
+	"version": "0.1.5",
+	"author": "Tobias Koppers @sokra",
+	"description": "raw loader module for webpack",
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"license": "MIT"
+}
