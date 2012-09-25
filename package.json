@@ -1,6 +1,6 @@
 {
 	"name": "raw-loader",
-	"version": "0.1.6",
+	"version": "0.2.0",
 	"author": "Tobias Koppers @sokra",
 	"description": "raw loader module for webpack",
 	"licenses": [

@@ -9,3 +9,4 @@ module.exports = function() {
 	this.values = [args];
 	return "module.exports = " + JSON.stringify(args);
 }
+module.exports.seperable = true;
