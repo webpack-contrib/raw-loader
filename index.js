@@ -2,11 +2,9 @@
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
 */
-module.exports = function() {
+module.exports = function(content) {
 	this.cacheable && this.cacheable();
-	var args = Array.prototype.slice.call(arguments);
-	args = args.join("");
-	this.values = [args];
-	return "module.exports = " + JSON.stringify(args);
+	this.value = content;
+	return "module.exports = " + JSON.stringify(content);
 }
 module.exports.seperable = true;
