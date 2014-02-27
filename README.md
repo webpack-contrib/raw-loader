@@ -1,5 +1,9 @@
 # raw loader for webpack
 
+## Installation
+
+`npm install raw-loader`
+
 ## Usage
 
 ``` javascript
