@@ -11,8 +11,7 @@ var fileContent = require("raw!./file.txt");
 // => returns file.txt content as string
 ```
 
-Don't forget to polyfill `require` if you want to use it in node.
-See `webpack` documentation.
+[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
 ## License
 
