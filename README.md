@@ -7,7 +7,7 @@
 ## Usage
 
 ``` javascript
-var fileContent = require("raw!./file.txt");
+var fileContent = require("raw-loader!./file.txt");
 // => returns file.txt content as string
 ```
 
