@@ -12,10 +12,9 @@
     <img width="200" height="200"
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
-  <h1>RAW Loader</h1>
+  <h1>Raw Loader</h1>
+  <h3>A loader for webpack that lets you import files as a string.</h3>
 </div>
-
-A loader for webpack that lets you import files as a string.
 
 <h2 align="center">Install</h2>
 
@@ -25,7 +24,7 @@ npm install --save-dev raw-loader
 
 <h2 align="center">Usage</h2>
 
-Use the loader either via your webpack config or manually.
+Use the loader either via your webpack config or inline.
 
 ### Via webpack config (recommended)
 
@@ -48,7 +47,7 @@ module.exports = {
 import txt from 'file.txt';
 ```
 
-### Manually
+### Inline
 
 **In your application**
 ```js
