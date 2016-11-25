@@ -15,6 +15,8 @@
   <h1>RAW Loader</h1>
 </div>
 
+A loader for webpack that lets you import files as a string.
+
 <h2 align="center">Install</h2>
 
 ```bash
@@ -23,16 +25,11 @@ npm install --save-dev raw-loader
 
 <h2 align="center">Usage</h2>
 
-**require**
-```js
-const txt = require("raw!./file.txt")
-```
+Use the loader either via your webpack config or manually.
+
+### Via webpack config (recommended)
 
 **webpack.config.js**
-```js
-const txt = require('file.txt')
-```
-
 ```js
 module.exports = {
   module: {
@@ -46,7 +43,19 @@ module.exports = {
 }
 ```
 
-<h2 align="center">Maintainer</h2>
+**In your application**
+```js
+import txt from 'file.txt';
+```
+
+### Manually
+
+**In your application**
+```js
+import txt from 'raw-loader!./file.txt';
+```
+
+<h2 align="center">Maintainers</h2>
 
 <table>
   <tbody>
