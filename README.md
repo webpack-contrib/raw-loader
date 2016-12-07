@@ -24,7 +24,7 @@ npm install --save-dev raw-loader
 
 <h2 align="center">Usage</h2>
 
-Use the loader either via your webpack config or inline.
+Use the loader either via your webpack config, CLI or inline.
 
 ### Via webpack config (recommended)
 
@@ -35,7 +35,7 @@ module.exports = {
     rules: [
       {
         test: /\.txt$/,
-        use: [ 'raw-loader' ]
+        use: 'raw-loader'
       }
     ]
   }
@@ -44,6 +44,17 @@ module.exports = {
 
 **In your application**
 ```js
+import txt from 'file.txt';
+```
+
+### CLI
+
+```bash
+webpack --module-bind 'txt=raw-loader'
+```
+
+**In your application**
+```
 import txt from 'file.txt';
 ```
 
