@@ -54,7 +54,7 @@ webpack --module-bind 'txt=raw-loader'
 ```
 
 **In your application**
-```
+```js
 import txt from 'file.txt';
 ```
 
