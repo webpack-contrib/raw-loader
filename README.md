@@ -71,12 +71,12 @@ import txt from 'raw-loader!./file.txt';
   <tbody>
     <tr>
       <td align="center">
-        <img width="150 height="150" src="https://github.com/sokra.png?s=150">
-        <br>
+        <img width="150" height="150" src="https://avatars.githubusercontent.com/sokra?v=3">
+        </br>
         <a href="https://github.com/sokra">Tobias Koppers</a>
       </td>
-    <tr>
-  <tbody>
+    </tr>
+  </tbody>
 </table>
 
 [npm]: https://img.shields.io/npm/v/raw-loader.svg
