@@ -11,7 +11,7 @@
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
   <h1>Raw Loader</h1>
-  <h3>A loader for webpack that lets you import files as a string.</h3>
+  <p>A loader for webpack that lets you import files as a string.</p>
 </div>
 
 <h2 align="center">Install</h2>
