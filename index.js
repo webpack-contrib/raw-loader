@@ -9,5 +9,5 @@ module.exports = function(source) {
     .replace(/\u2028/g, '\\u2028')
     .replace(/\u2029/g, '\\u2029');
 
-  return "module.exports = " + json;
+	return "export default " + json;
 }
