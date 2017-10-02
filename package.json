@@ -1,6 +1,6 @@
 {
   "name": "raw-loader",
-  "version": "0.5.1",
+  "version": "1.0.0-beta.0",
   "author": "Tobias Koppers @sokra",
   "description": "raw loader module for webpack",
   "main": "index.js",
