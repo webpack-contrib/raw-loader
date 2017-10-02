@@ -1,11 +1,18 @@
 {
-	"name": "raw-loader",
-	"version": "0.5.1",
-	"author": "Tobias Koppers @sokra",
-	"description": "raw loader module for webpack",
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:webpack/raw-loader.git"
-	},
-	"license": "MIT"
+  "name": "raw-loader",
+  "version": "0.5.1",
+  "author": "Tobias Koppers @sokra",
+  "description": "raw loader module for webpack",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "standard-version": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webpack/raw-loader.git"
+  }
 }
