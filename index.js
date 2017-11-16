@@ -3,7 +3,6 @@
   Author Tobias Koppers @sokra
 */
 module.exports = function(source) {
-  this.cacheable && this.cacheable();
   this.value = source;
 
   var json = JSON.stringify(source)
