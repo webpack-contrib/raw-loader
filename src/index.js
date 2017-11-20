@@ -1,13 +1,7 @@
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-export default function (source) {
-  this.value = source;
-
-  var json = JSON.stringify(source)
+export default function loader(src) {
+  const raw = JSON.stringify(src)
     .replace(/\u2028/g, '\\u2028')
     .replace(/\u2029/g, '\\u2029');
 
-  return 'export default ' + json;
+  return `export default ${raw}`;
 }
