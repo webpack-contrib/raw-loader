@@ -2,7 +2,7 @@
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
 */
-module.exports = function(source) {
+export default function (source) {
   this.value = source;
 
   var json = JSON.stringify(source)
@@ -10,4 +10,4 @@ module.exports = function(source) {
     .replace(/\u2029/g, '\\u2029');
 
   return 'export default ' + json;
-};
+}
