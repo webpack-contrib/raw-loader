@@ -67,7 +67,7 @@ And run `webpack` via your preferred method.
 [deps]: https://david-dm.org/webpack-contrib/raw-loader.svg
 [deps-url]: https://david-dm.org/webpack-contrib/raw-loader
 
-[tests]: https://circleci.com/gh/webpack-contrib/raw-loader.svg?style=svg
+[tests]: 	https://img.shields.io/circleci/project/github/webpack-contrib/raw-loader.svg
 [tests-url]: https://circleci.com/gh/webpack-contrib/raw-loader
 
 [cover]: https://codecov.io/gh/webpack-contrib/raw-loader/branch/master/graph/badge.svg
