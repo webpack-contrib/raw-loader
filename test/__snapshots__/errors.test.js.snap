@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validation 1`] = `
+"Raw Loader Invalid Options
+
+options should NOT have additional properties
+"
+`;

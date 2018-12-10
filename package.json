@@ -1,74 +1,92 @@
 {
-	"name": "raw-loader",
-	"version": "0.5.1",
-	"description": "A loader for webpack that allows importing files as a String",
-	"license": "MIT",
-	"repository": "webpack-contrib/raw-loader",
-	"author": "Tobias Koppers @sokra",
-	"homepage": "https://github.com/webpack-contrib/raw-loader",
-	"bugs": "https://github.com/webpack-contrib/raw-loader/issues",
-	"main": "index.js",
-	"engines": {
-		"node": ">= 6.9.0"
-	},
-	"scripts": {
-		"commitlint": "commitlint",
-		"commitmsg": "commitlint -e $GIT_PARAMS",
-		"lint": "eslint --cache src test",
-		"ci:lint:commits": "commitlint --from=${CIRCLE_BRANCH} --to=${CIRCLE_SHA1}",
-		"lint-staged": "lint-staged",
-		"release": "standard-version",
-		"release:ci": "conventional-github-releaser -p angular",
-		"release:validate": "commitlint --from=$(git describe --tags --abbrev=0) --to=$(git rev-parse HEAD)",
-		"security": "nsp check",
-		"test": "jest",
-		"test:watch": "jest --watch",
-		"test:coverage": "jest --collectCoverageFrom='src/**/*.js' --coverage",
-		"ci:lint": "npm run lint && npm run security",
-		"ci:test": "npm run test -- --runInBand",
-		"ci:coverage": "npm run test:coverage -- --runInBand",
-		"defaults": "webpack-defaults"
-	},
-	"files": [
-		"index.js"
-	],
-	"peerDependencies": {
-		"webpack": "^4.3.0"
-	},
-	"dependencies": {
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^6.1.3",
-		"@commitlint/config-angular": "^6.1.3",
-		"@webpack-contrib/eslint-config-webpack": "^2.0.2",
-		"babel-cli": "^6.26.0",
-		"babel-jest": "^22.4.3",
-		"babel-plugin-transform-object-rest-spread": "^6.26.0",
-		"babel-polyfill": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"conventional-github-releaser": "^2.0.2",
-		"cross-env": "^5.1.4",
-		"del": "^3.0.0",
-		"del-cli": "^1.1.0",
-		"eslint": "^4.19.1",
-		"eslint-plugin-import": "^2.9.0",
-		"eslint-plugin-prettier": "^2.6.0",
-		"husky": "^0.14.3",
-		"jest": "^22.4.3",
-		"lint-staged": "^7.0.0",
-		"memory-fs": "^0.4.1",
-		"nsp": "^3.2.1",
-		"pre-commit": "^1.2.2",
-		"prettier": "^1.11.1",
-		"standard-version": "^4.3.0",
-		"webpack": "^4.3.0",
-		"webpack-defaults": "^2.1.1"
-	},
-	"pre-commit": "lint-staged",
-	"lint-staged": {
-		"*.js": [
-			"eslint --fix",
-			"git add"
-		]
-	}
+  "name": "raw-loader",
+  "version": "0.5.1",
+  "description": "A loader for webpack that allows importing files as a String",
+  "license": "MIT",
+  "repository": "webpack-contrib/raw-loader",
+  "author": "Tobias Koppers @sokra",
+  "homepage": "https://github.com/webpack-contrib/raw-loader",
+  "bugs": "https://github.com/webpack-contrib/raw-loader/issues",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "scripts": {
+    "lint": "eslint --cache 'index.js' test",
+    "release": "standard-version",
+    "security": "npm audit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --collectCoverageFrom='index.js' --coverage",
+    "ci:lint": "npm run lint && npm run security",
+    "ci:lint:commits": "commitlint --from=${CIRCLE_BRANCH} --to=${CIRCLE_SHA1}",
+    "ci:test": "npm run test -- --runInBand",
+    "ci:coverage": "npm run test:coverage -- --runInBand",
+    "defaults": "webpack-defaults"
+  },
+  "files": [
+    "index.js",
+    "options.json"
+  ],
+  "peerDependencies": {
+    "webpack": "^4.3.0"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "schema-utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@commitlint/cli": "^7.1.6",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@webpack-contrib/eslint-config-webpack": "^3.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "cross-env": "^5.2.0",
+    "del": "^3.0.0",
+    "del-cli": "^1.1.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "memory-fs": "^0.4.1",
+    "prettier": "^1.11.1",
+    "standard-version": "^4.3.0",
+    "webpack": "^4.3.0",
+    "webpack-defaults": "^2.1.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "6.9.0"
+          },
+          "useBuiltIns": "usage"
+        }
+      ]
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
 }
