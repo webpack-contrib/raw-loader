@@ -1,6 +1,9 @@
 <div align="center">
+  <img width="200" height="200"
+    src="https://cdn3.iconfinder.com/data/icons/lexter-flat-colorfull-file-formats/56/raw-256.png">
   <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
+    <img width="200" height="200"
+      src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
 </div>
 
@@ -30,9 +33,13 @@ $ npm install raw-loader --save-dev
 
 Then add the loader to your `webpack` config. For example:
 
+**file.js**
+
 ```js
 import txt from './file.txt';
 ```
+
+**webpack.config.js**
 
 ```js
 // webpack.config.js
@@ -55,6 +62,14 @@ $ webpack --module-bind 'txt=raw-loader'
 ```
 
 And run `webpack` via your preferred method.
+
+## Examples
+
+Inline.
+
+```js
+import txt from 'raw-loader!./file.txt';
+```
 
 ## License
 
