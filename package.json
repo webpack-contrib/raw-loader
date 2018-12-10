@@ -1,6 +1,6 @@
 {
   "name": "raw-loader",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "A loader for webpack that allows importing files as a String",
   "license": "MIT",
   "repository": "webpack-contrib/raw-loader",
