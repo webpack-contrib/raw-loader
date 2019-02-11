@@ -7,6 +7,14 @@
   </a>
 </div>
 
+[![npm][npm]][npm-url]
+[![node][node]][node-url]
+[![deps][deps]][deps-url]
+[![tests][tests]][tests-url]
+[![coverage][cover]][cover-url]
+[![chat][chat]][chat-url]
+[![size][size]][size-url]
+
 # raw-loader
 
 A loader for webpack that allows importing files as a String.
