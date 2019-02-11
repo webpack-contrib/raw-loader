@@ -7,14 +7,6 @@
   </a>
 </div>
 
-[![npm][npm]][npm-url]
-[![node][node]][node-url]
-[![deps][deps]][deps-url]
-[![tests][tests]][tests-url]
-[![coverage][cover]][cover-url]
-[![chat][chat]][chat-url]
-[![size][size]][size-url]
-
 # raw-loader
 
 A loader for webpack that allows importing files as a String.
@@ -32,12 +24,6 @@ $ npm install raw-loader --save-dev
 ```
 
 Then add the loader to your `webpack` config. For example:
-
-**file.js**
-
-```js
-import txt from './file.txt';
-```
 
 **webpack.config.js**
 
@@ -63,13 +49,22 @@ $ webpack --module-bind 'txt=raw-loader'
 
 And run `webpack` via your preferred method.
 
-## Examples
+## Usage
 
-Inline.
+Since you have configured `.txt` file in `webpack.config.js` , you can import `.txt` files directly.
 
 ```js
-import txt from 'raw-loader!./file.txt';
+import txt from './file.txt';
 ```
+
+`raw-loader` can also import `.css` and `.html` files as String, when importing, you should use file path starting with `raw-loader!`.
+
+```js
+import style from 'raw-loader!./style.css';
+
+import header from 'raw-loader!./header.html';
+```
+
 
 ## License
 
