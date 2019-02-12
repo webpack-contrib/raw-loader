@@ -19,10 +19,6 @@
 
 A loader for webpack that allows importing files as a String.
 
-## Requirements
-
-This module requires a minimum of Node v6.9.0 and Webpack v4.0.0.
-
 ## Getting Started
 
 To begin, you'll need to install `raw-loader`:
@@ -47,7 +43,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.txt$/,
+        test: /\.txt$/i,
         use: 'raw-loader'
       }
     ]
@@ -76,6 +72,12 @@ Beware, if you already define loader(s) for extension(s) in `webpack.config.js` 
 ```js
 import css from '!!raw-loader!./file.css'; // Adding `!!` to a request will disable all loaders specified in the configuration
 ```
+
+## Contributing
+
+Please take a moment to read our contributing guidelines if you haven't yet done so.
+
+[CONTRIBUTING](./.github/CONTRIBUTING.md)
 
 ## License
 
