@@ -44,11 +44,11 @@ module.exports = {
     rules: [
       {
         test: /\.txt$/i,
-        use: 'raw-loader'
-      }
-    ]
-  }
-}
+        use: 'raw-loader',
+      },
+    ],
+  },
+};
 ```
 
 Or from the command-line:
@@ -89,7 +89,7 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 [node-url]: https://nodejs.org
 [deps]: https://david-dm.org/webpack-contrib/raw-loader.svg
 [deps-url]: https://david-dm.org/webpack-contrib/raw-loader
-[tests]: 	https://img.shields.io/circleci/project/github/webpack-contrib/raw-loader.svg
+[tests]: https://img.shields.io/circleci/project/github/webpack-contrib/raw-loader.svg
 [tests-url]: https://circleci.com/gh/webpack-contrib/raw-loader
 [cover]: https://codecov.io/gh/webpack-contrib/raw-loader/branch/master/graph/badge.svg
 [cover-url]: https://codecov.io/gh/webpack-contrib/raw-loader
