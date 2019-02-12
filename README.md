@@ -65,10 +65,16 @@ And run `webpack` via your preferred method.
 
 ## Examples
 
-Inline.
+### Inline
 
 ```js
 import txt from 'raw-loader!./file.txt';
+```
+
+Beware, if you already define loader(s) for extension(s) in `webpack.config.js` you should use:
+
+```js
+import css from '!!raw-loader!./file.css'; // Adding `!!` to a request will disable all loaders specified in the configuration
 ```
 
 ## License
