@@ -7,20 +7,24 @@
   "author": "Tobias Koppers @sokra",
   "homepage": "https://github.com/webpack-contrib/raw-loader",
   "bugs": "https://github.com/webpack-contrib/raw-loader/issues",
-  "main": "index.js",
+  "main": "dist/cjs.js",
   "engines": {
     "node": ">= 6.9.0"
   },
   "scripts": {
     "start": "npm run build -- -w",
+    "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js' --copy-files",
+    "clean": "del-cli dist",
     "commitlint": "commitlint",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "lint": "eslint --cache index.js test",
+    "lint": "eslint --cache src test",
+    "prebuild": "npm run clean",
+    "prepublish": "npm run build",
     "release": "standard-version",
     "security": "npm audit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --collectCoverageFrom='index.js' --coverage",
+    "test:coverage": "jest --collectCoverageFrom='src/**/*.js' --coverage",
     "ci:lint": "npm run lint && npm run security",
     "ci:test": "npm run test -- --runInBand",
     "ci:coverage": "npm run test:coverage -- --runInBand",
@@ -28,8 +32,7 @@
     "defaults": "webpack-defaults"
   },
   "files": [
-    "index.js",
-    "options.json"
+    "dist/"
   ],
   "peerDependencies": {
     "webpack": "^4.3.0"

@@ -1,4 +1,4 @@
-import loader from '../index';
+import loader from '../src';
 
 it('validation', () => {
   const validate = (options) =>
