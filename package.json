@@ -1,13 +1,14 @@
 {
-  "name": "raw-loader",
+  "name": "angular-docgen-loader",
   "version": "1.0.0",
   "description": "A loader for webpack that allows importing files as a String",
   "license": "MIT",
-  "repository": "webpack-contrib/raw-loader",
-  "author": "Tobias Koppers @sokra",
-  "homepage": "https://github.com/webpack-contrib/raw-loader",
-  "bugs": "https://github.com/webpack-contrib/raw-loader/issues",
+  "repository": "thatguynamedandy/angular-docgen-loader",
+  "author": "Andy Polhill @andy_polhill",
+  "homepage": "https://github.com/thatguynamedandy/angular-docgen-loader",
+  "bugs": "https://github.com/thatguynamedandy/angular-docgen-loader/issues",
   "main": "dist/cjs.js",
+  "types": "dist/cjs.d.ts",
   "engines": {
     "node": ">= 6.9.0"
   },
@@ -35,7 +36,8 @@
     "dist/"
   ],
   "peerDependencies": {
-    "webpack": "^4.3.0"
+    "webpack": "^4.3.0",
+    "angular-docgen": "^1.0.0"
   },
   "dependencies": {
     "loader-utils": "^1.1.0",

@@ -12,14 +12,14 @@ about: Something went awry and you'd like to tell us about it.
   while making animal noises.
 
   👉🏽 Need support, advice, or help? Don't open an issue!
-  Head to StackOverflow or https://gitter.im/webpack/webpack.
+  Head to StackOverflow.
 -->
 
 * Operating System:
 * Node Version:
 * NPM Version:
 * webpack Version:
-* raw-loader Version:
+* angular-docgen-loader Version:
 
 ### Expected Behavior
 

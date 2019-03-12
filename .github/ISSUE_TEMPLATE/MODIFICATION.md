@@ -19,7 +19,7 @@ about: Would you like something work differently? Have an alternative approach? 
 * Node Version:
 * NPM Version:
 * webpack Version:
-* raw-loader Version:
+* angular-docgen-loader Version:
 
 
 ### Expected Behavior / Situation

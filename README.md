@@ -1,30 +1,26 @@
 <div align="center">
   <img width="200" height="200"
-    src="https://cdn3.iconfinder.com/data/icons/lexter-flat-colorfull-file-formats/56/raw-256.png">
+    src="./assets/angular.svg">
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200"
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
 </div>
 
-[![npm][npm]][npm-url]
-[![node][node]][node-url]
-[![deps][deps]][deps-url]
 [![tests][tests]][tests-url]
-[![coverage][cover]][cover-url]
-[![chat][chat]][chat-url]
-[![size][size]][size-url]
 
-# raw-loader
+# angular-docgen-loader
 
-A loader for webpack that allows importing files as a String.
+A loader that works in conjunction with [Angular Docgen](https://github.com/thatguynamedandy/angular-docgen) to load component definitions as a JSON object.
+
+This repo is a direct fork of the [webpack raw loader](https://github.com/webpack/raw-loader). Any setup relating to raw loader should also work for this loader.
 
 ## Getting Started
 
-To begin, you'll need to install `raw-loader`:
+To begin, you'll need to install `angular-docgen-loader`:
 
 ```console
-$ npm install raw-loader --save-dev
+$ npm install angular-docgen-loader --save-dev
 ```
 
 Then add the loader to your `webpack` config. For example:
@@ -32,7 +28,7 @@ Then add the loader to your `webpack` config. For example:
 **file.js**
 
 ```js
-import txt from './file.txt';
+import ComponentDoc from '!angular-docgen-loader!./component.ts';
 ```
 
 **webpack.config.js**
@@ -40,38 +36,17 @@ import txt from './file.txt';
 ```js
 // webpack.config.js
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.txt$/i,
-        use: 'raw-loader',
-      },
-    ],
-  },
+  rules: [
+    {
+      test: /!angular-docgen-loader!/,
+      use: "angular-docgen-loader"
+    }
+  ]
 };
 ```
 
-Or from the command-line:
-
-```console
-$ webpack --module-bind 'txt=raw-loader'
-```
-
-And run `webpack` via your preferred method.
-
 ## Examples
 
-### Inline
-
-```js
-import txt from 'raw-loader!./file.txt';
-```
-
-Beware, if you already define loader(s) for extension(s) in `webpack.config.js` you should use:
-
-```js
-import css from '!!raw-loader!./file.css'; // Adding `!!` to a request will disable all loaders specified in the configuration
-```
 
 ## Contributing
 
@@ -83,17 +58,5 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 
 #### [MIT](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/raw-loader.svg
-[npm-url]: https://npmjs.com/package/raw-loader
-[node]: https://img.shields.io/node/v/raw-loader.svg
-[node-url]: https://nodejs.org
-[deps]: https://david-dm.org/webpack-contrib/raw-loader.svg
-[deps-url]: https://david-dm.org/webpack-contrib/raw-loader
-[tests]: https://img.shields.io/circleci/project/github/webpack-contrib/raw-loader.svg
-[tests-url]: https://circleci.com/gh/webpack-contrib/raw-loader
-[cover]: https://codecov.io/gh/webpack-contrib/raw-loader/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/raw-loader
-[chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
-[chat-url]: https://gitter.im/webpack/webpack
-[size]: https://packagephobia.now.sh/badge?p=raw-loader
-[size-url]: https://packagephobia.now.sh/result?p=raw-loader
+[tests]: https://img.shields.io/circleci/project/github/thatguynamedandy/angular-docgen-loader.svg
+[tests-url]: https://circleci.com/gh/thatguynamedandy/angular-docgen-loader

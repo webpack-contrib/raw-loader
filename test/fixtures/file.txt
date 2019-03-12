@@ -1,9 +1,11 @@
-Где розы — там и тернии —
-Таков закон судьбы.
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 
-Николай Алексеевич Некрасов
-
-Where the roses are - there are thorns -
-That is the law of fate.
-
-Nikolay Alekseevich Nekrasov
+/**
+ * Sample Component
+ */
+@Component({
+  templateUrl: "template.html",
+})
+export default class SampleComponent {
+  @Input() disabled: Boolean = false;
+}
