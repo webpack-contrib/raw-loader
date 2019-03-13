@@ -2,10 +2,10 @@
 
 exports[`loader should works: errors 1`] = `Array []`;
 
-exports[`loader should works: file 1`] = `"module.exports = \\"Где розы — там и тернии —\\\\nТаков закон судьбы.\\\\n\\\\nНиколай Алексеевич Некрасов\\\\n\\\\nWhere the roses are - there are thorns -\\\\nThat is the law of fate.\\\\n\\\\nNikolay Alekseevich Nekrasov\\\\n\\""`;
+exports[`loader should works: file 1`] = `"export default \\"Где розы — там и тернии —\\\\nТаков закон судьбы.\\\\n\\\\nНиколай Алексеевич Некрасов\\\\n\\\\nWhere the roses are - there are thorns -\\\\nThat is the law of fate.\\\\n\\\\nNikolay Alekseevich Nekrasov\\\\n\\""`;
 
-exports[`loader should works: inline 1`] = `"module.exports = \\"Где розы — там и тернии —\\\\nТаков закон судьбы.\\\\n\\\\nНиколай Алексеевич Некрасов\\\\n\\\\nWhere the roses are - there are thorns -\\\\nThat is the law of fate.\\\\n\\\\nNikolay Alekseevich Nekrasov\\\\n\\""`;
+exports[`loader should works: inline 1`] = `"export default \\"Где розы — там и тернии —\\\\nТаков закон судьбы.\\\\n\\\\nНиколай Алексеевич Некрасов\\\\n\\\\nWhere the roses are - there are thorns -\\\\nThat is the law of fate.\\\\n\\\\nNikolay Alekseevich Nekrasov\\\\n\\""`;
 
-exports[`loader should works: separator 1`] = `"module.exports = \\"Word\\\\u2028Word\\\\u2029Word\\\\n\\""`;
+exports[`loader should works: separator 1`] = `"export default \\"Word\\\\u2028Word\\\\u2029Word\\\\n\\""`;
 
 exports[`loader should works: warnings 1`] = `Array []`;
