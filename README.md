@@ -16,10 +16,8 @@ This repo is a direct fork of the [webpack raw loader](https://github.com/webpac
 
 ## Getting Started
 
-To begin, you'll need to install `angular-docgen-loader`:
-
 ```console
-$ npm install angular-docgen-loader --save-dev
+$ npm install angular-docgen angular-docgen-loader --save-dev
 ```
 
 Then add the loader to your `webpack` config. For example:
