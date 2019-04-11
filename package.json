@@ -38,7 +38,7 @@
   ],
   "peerDependencies": {
     "webpack": "^4.3.0",
-    "angular-docgen": "^1.0.0"
+    "angular-docgen": "^1.0.1"
   },
   "dependencies": {
     "loader-utils": "^1.1.0",
@@ -67,7 +67,8 @@
     "prettier": "^1.11.1",
     "standard-version": "^4.3.0",
     "webpack": "^4.3.0",
-    "semantic-release": "^15.13.3"
+    "semantic-release": "^15.13.3",
+    "typescript": "^3.4.3"
   },
   "keywords": [
     "webpack"

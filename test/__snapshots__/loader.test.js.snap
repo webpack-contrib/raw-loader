@@ -2,10 +2,10 @@
 
 exports[`loader should works: errors 1`] = `Array []`;
 
-exports[`loader should works: file 1`] = `"export default {\\"component\\":{\\"description\\":\\"Sample Component\\",\\"name\\":\\"SampleComponent\\",\\"styleUrls\\":null,\\"templateUrl\\":\\"template.html\\"},\\"inputs\\":[{\\"description\\":null,\\"options\\":null,\\"name\\":\\"disabled\\",\\"type\\":\\"Boolean\\",\\"value\\":false}],\\"outputs\\":[]}"`;
+exports[`loader should works: file 1`] = `"export default {\\"component\\":{\\"description\\":\\"Sample Component\\",\\"name\\":\\"SampleComponent\\",\\"selector\\":null,\\"styleUrls\\":null,\\"templateUrl\\":\\"template.html\\"},\\"inputs\\":[{\\"description\\":null,\\"options\\":null,\\"name\\":\\"disabled\\",\\"type\\":\\"Boolean\\",\\"value\\":false}],\\"outputs\\":[]}"`;
 
-exports[`loader should works: inline 1`] = `"export default {\\"component\\":{\\"description\\":\\"Sample Component\\",\\"name\\":\\"SampleComponent\\",\\"styleUrls\\":null,\\"templateUrl\\":\\"template.html\\"},\\"inputs\\":[{\\"description\\":null,\\"options\\":null,\\"name\\":\\"disabled\\",\\"type\\":\\"Boolean\\",\\"value\\":false}],\\"outputs\\":[]}"`;
+exports[`loader should works: inline 1`] = `"export default {\\"component\\":{\\"description\\":\\"Sample Component\\",\\"name\\":\\"SampleComponent\\",\\"selector\\":null,\\"styleUrls\\":null,\\"templateUrl\\":\\"template.html\\"},\\"inputs\\":[{\\"description\\":null,\\"options\\":null,\\"name\\":\\"disabled\\",\\"type\\":\\"Boolean\\",\\"value\\":false}],\\"outputs\\":[]}"`;
 
-exports[`loader should works: separator 1`] = `"export default {\\"component\\":{\\"description\\":\\"\\",\\"styleUrls\\":[]},\\"inputs\\":[],\\"outputs\\":[]}"`;
+exports[`loader should works: separator 1`] = `"export default {\\"component\\":{\\"description\\":\\"\\",\\"selector\\":\\"\\",\\"styleUrls\\":[]},\\"inputs\\":[],\\"outputs\\":[]}"`;
 
 exports[`loader should works: warnings 1`] = `Array []`;
