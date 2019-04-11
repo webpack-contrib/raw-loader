@@ -1,6 +1,6 @@
 {
   "name": "angular-docgen-loader",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A loader for webpack that allows importing files as a String",
   "license": "MIT",
   "repository": "thatguynamedandy/angular-docgen-loader",
@@ -30,7 +30,8 @@
     "ci:test": "npm run test -- --runInBand",
     "ci:coverage": "npm run test:coverage -- --runInBand",
     "ci:lint:commits": "commitlint --from=origin/master --to=${CIRCLE_SHA1}",
-    "defaults": "webpack-defaults"
+    "defaults": "webpack-defaults",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist/"
@@ -65,7 +66,8 @@
     "memory-fs": "^0.4.1",
     "prettier": "^1.11.1",
     "standard-version": "^4.3.0",
-    "webpack": "^4.3.0"
+    "webpack": "^4.3.0",
+    "semantic-release": "^15.13.3"
   },
   "keywords": [
     "webpack"
