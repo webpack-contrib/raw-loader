@@ -55,5 +55,3 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 
 #### [MIT](./LICENSE)
 
-[tests]: https://img.shields.io/circleci/project/github/thatguynamedandy/angular-docgen-loader.svg
-[tests-url]: https://circleci.com/gh/thatguynamedandy/angular-docgen-loader
