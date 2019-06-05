@@ -1,6 +1,20 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [3.0.0](https://github.com/webpack-contrib/raw-loader/compare/v2.0.0...v3.0.0) (2019-06-05)
+
+
+### chore
+
+* **deps:** update ([#81](https://github.com/webpack-contrib/raw-loader/issues/81)) ([d11ff27](https://github.com/webpack-contrib/raw-loader/commit/d11ff27))
+
+
+### BREAKING CHANGES
+
+* **deps:** minimum required nodejs version is `8.9.0`
+
+
 
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/webpack-contrib/raw-loader/compare/v1.0.0...v2.0.0) (2019-03-18)
