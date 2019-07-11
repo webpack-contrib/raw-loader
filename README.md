@@ -90,7 +90,7 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 [deps]: https://david-dm.org/webpack-contrib/raw-loader.svg
 [deps-url]: https://david-dm.org/webpack-contrib/raw-loader
 [tests]: https://dev.azure.com/webpack-contrib/raw-loader/_apis/build/status/webpack-contrib.raw-loader?branchName=master
-[tests-url]: https://dev.azure.com/webpack-contrib/raw-loader/_build/latest?definitionId=2&branchName=master
+[tests-url]: https://dev.azure.com/webpack-contrib/raw-loader/_build/latest?definitionId=10&branchName=master
 [cover]: https://codecov.io/gh/webpack-contrib/raw-loader/branch/master/graph/badge.svg
 [cover-url]: https://codecov.io/gh/webpack-contrib/raw-loader
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
