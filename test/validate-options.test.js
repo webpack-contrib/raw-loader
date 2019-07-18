@@ -1,6 +1,6 @@
 import loader from '../src';
 
-it('validation', () => {
+it('validate options', () => {
   const validate = (options) =>
     loader.call(
       Object.assign(
