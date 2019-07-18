@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/webpack-contrib/raw-loader/compare/v3.0.0...v3.1.0) (2019-07-18)
+
+
+### Features
+
+* improved validation error messages ([#85](https://github.com/webpack-contrib/raw-loader/issues/85)) ([6cf76b8](https://github.com/webpack-contrib/raw-loader/commit/6cf76b8))
+
+
 
 ## [3.0.0](https://github.com/webpack-contrib/raw-loader/compare/v2.0.0...v3.0.0) (2019-06-05)
 
