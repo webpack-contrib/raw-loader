@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate options 1`] = `
+"Invalid options object. Raw Loader has been initialised using an options object that does not match the API schema.
+ - options has an unknown property 'unknown'. These properties are valid:
+   object {}"
+`;

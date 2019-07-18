@@ -6,7 +6,10 @@ import schema from './options.json';
 export default function rawLoader(source) {
   const options = getOptions(this) || {};
 
-  validateOptions(schema, options, 'Raw Loader');
+  validateOptions(schema, options, {
+    name: 'Raw Loader',
+    baseDataPath: 'options',
+  });
 
   const json = JSON.stringify(source)
     .replace(/\u2028/g, '\\u2028')
