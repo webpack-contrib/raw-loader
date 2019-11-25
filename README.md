@@ -59,6 +59,40 @@ $ webpack --module-bind 'txt=raw-loader'
 
 And run `webpack` via your preferred method.
 
+## Options
+
+### `esModule`
+
+Type: `Boolean`
+Default: `true`
+
+By default, `raw-loader` generates JS modules that use the ES modules syntax.
+There are some cases in which using ES modules is beneficial, like in the case of [module concatenation](https://webpack.js.org/plugins/module-concatenation-plugin/) and [tree shaking](https://webpack.js.org/guides/tree-shaking/).
+
+You can enable a CommonJS module syntax using:
+
+**webpack.config.js**
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.txt$/i,
+        use: [
+          {
+            loader: 'raw-loader',
+            options: {
+              esModule: false,
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
+```
+
 ## Examples
 
 ### Inline
@@ -70,7 +104,7 @@ import txt from 'raw-loader!./file.txt';
 Beware, if you already define loader(s) for extension(s) in `webpack.config.js` you should use:
 
 ```js
-import css from '!!raw-loader!./file.css'; // Adding `!!` to a request will disable all loaders specified in the configuration
+import css from '!!raw-loader!./file.txt'; // Adding `!!` to a request will disable all loaders specified in the configuration
 ```
 
 ## Contributing

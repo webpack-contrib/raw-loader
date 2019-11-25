@@ -5,4 +5,8 @@ describe('cjs', () => {
   it('should exported', () => {
     expect(cjs).toEqual(src);
   });
+
+  it('should not export "raw" flag', () => {
+    expect(cjs.raw).toBeUndefined();
+  });
 });
