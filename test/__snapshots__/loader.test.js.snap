@@ -1,11 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`loader should works: errors 1`] = `Array []`;
+exports[`loader should work with "ModuleConcatenationPlugin" plugin: assets 1`] = `
+Array [
+  "main.bundle.js",
+]
+`;
 
-exports[`loader should works: file 1`] = `"export default \\"Где розы — там и тернии —\\\\nТаков закон судьбы.\\\\n\\\\nНиколай Алексеевич Некрасов\\\\n\\\\nWhere the roses are - there are thorns -\\\\nThat is the law of fate.\\\\n\\\\nNikolay Alekseevich Nekrasov\\\\n\\""`;
+exports[`loader should work with "ModuleConcatenationPlugin" plugin: errors 1`] = `Array []`;
 
-exports[`loader should works: inline 1`] = `"export default \\"Где розы — там и тернии —\\\\nТаков закон судьбы.\\\\n\\\\nНиколай Алексеевич Некрасов\\\\n\\\\nWhere the roses are - there are thorns -\\\\nThat is the law of fate.\\\\n\\\\nNikolay Alekseevich Nekrasov\\\\n\\""`;
+exports[`loader should work with "ModuleConcatenationPlugin" plugin: result 1`] = `
+"Где розы — там и тернии —
+Таков закон судьбы.
 
-exports[`loader should works: separator 1`] = `"export default \\"Word\\\\u2028Word\\\\u2029Word\\\\n\\""`;
+Николай Алексеевич Некрасов
 
-exports[`loader should works: warnings 1`] = `Array []`;
+Where the roses are - there are thorns -
+That is the law of fate.
+
+Nikolay Alekseevich Nekrasov
+"
+`;
+
+exports[`loader should work with "ModuleConcatenationPlugin" plugin: warnings 1`] = `Array []`;
+
+exports[`loader should work with inline loader: assets 1`] = `
+Array [
+  "main.bundle.js",
+]
+`;
+
+exports[`loader should work with inline loader: errors 1`] = `Array []`;
+
+exports[`loader should work with inline loader: result 1`] = `
+"Где розы — там и тернии —
+Таков закон судьбы.
+
+Николай Алексеевич Некрасов
+
+Where the roses are - there are thorns -
+That is the law of fate.
+
+Nikolay Alekseevich Nekrasov
+"
+`;
+
+exports[`loader should work with inline loader: warnings 1`] = `Array []`;
+
+exports[`loader should work: assets 1`] = `
+Array [
+  "main.bundle.js",
+]
+`;
+
+exports[`loader should work: errors 1`] = `Array []`;
+
+exports[`loader should work: result 1`] = `
+"Где розы — там и тернии —
+Таков закон судьбы.
+
+Николай Алексеевич Некрасов
+
+Where the roses are - there are thorns -
+That is the law of fate.
+
+Nikolay Alekseevich Nekrasov
+"
+`;
+
+exports[`loader should work: warnings 1`] = `Array []`;
