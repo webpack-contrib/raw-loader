@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/webpack-contrib/raw-loader/compare/v3.1.0...v4.0.0) (2019-11-25)
+
+
+### Features
+
+* new esModules option
+
+
+### BREAKING CHANGES
+
+* minimum required nodejs version is `10.13.0`
+
+
+
 ## [3.1.0](https://github.com/webpack-contrib/raw-loader/compare/v3.0.0...v3.1.0) (2019-07-18)
 
 
