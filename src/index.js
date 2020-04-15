@@ -4,7 +4,7 @@ import validateOptions from 'schema-utils';
 import schema from './options.json';
 
 export default function rawLoader(source) {
-  const options = getOptions(this) || {};
+  const options = getOptions(this);
 
   validateOptions(schema, options, {
     name: 'Raw Loader',
