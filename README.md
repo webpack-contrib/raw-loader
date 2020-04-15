@@ -55,6 +55,10 @@ And run `webpack` via your preferred method.
 
 ## Options
 
+|            Name             |    Type     | Default | Description            |
+| :-------------------------: | :---------: | :-----: | :--------------------- |
+| **[`esModule`](#esmodule)** | `{Boolean}` | `true`  | Uses ES modules syntax |
+
 ### `esModule`
 
 Type: `Boolean`
