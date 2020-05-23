@@ -6,6 +6,10 @@ describe('validate options', () => {
       success: [true, false],
       failure: ['true'],
     },
+    raw: {
+      success: [true, false],
+      failure: ['true', 'false'],
+    },
     unknown: {
       success: [],
       failure: [1, true, false, 'test', /test/, [], {}, { foo: 'bar' }],

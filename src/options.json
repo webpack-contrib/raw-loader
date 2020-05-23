@@ -3,6 +3,9 @@
   "properties": {
     "esModule": {
       "type": "boolean"
+    },
+    "raw": {
+      "type": "boolean"
     }
   },
   "type": "object"

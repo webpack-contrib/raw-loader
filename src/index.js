@@ -11,12 +11,21 @@ export default function rawLoader(source) {
     baseDataPath: 'options',
   });
 
-  const json = JSON.stringify(source)
-    .replace(/\u2028/g, '\\u2028')
-    .replace(/\u2029/g, '\\u2029');
-
+  const shouldConvert = options.raw !== 'undefined' ? !options.raw : true;
   const esModule =
     typeof options.esModule !== 'undefined' ? options.esModule : true;
 
+  let converted = source;
+
+  if (shouldConvert && Buffer.isBuffer(source)) {
+    converted = source.toString('utf-8');
+  }
+  const json = JSON.stringify(converted)
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+
   return `${esModule ? 'export default' : 'module.exports ='} ${json};`;
 }
+
+rawLoader.raw = true;
+module.exports.raw = true;
