@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`loader should not work with binary: assets 1`] = `
+Array [
+  "main.bundle.js",
+]
+`;
+
+exports[`loader should not work with binary: errors 1`] = `Array []`;
+
+exports[`loader should not work with binary: result 1`] = `"fbfa5723382326d54d66958764496c83"`;
+
+exports[`loader should not work with binary: warnings 1`] = `Array []`;
+
 exports[`loader should work with "ModuleConcatenationPlugin" plugin: assets 1`] = `
 Array [
   "main.bundle.js",
@@ -22,6 +34,18 @@ Nikolay Alekseevich Nekrasov
 `;
 
 exports[`loader should work with "ModuleConcatenationPlugin" plugin: warnings 1`] = `Array []`;
+
+exports[`loader should work with binary with raw option: assets 1`] = `
+Array [
+  "main.bundle.js",
+]
+`;
+
+exports[`loader should work with binary with raw option: errors 1`] = `Array []`;
+
+exports[`loader should work with binary with raw option: result 1`] = `"394e219db24b8dfb02b7db40543c81f2"`;
+
+exports[`loader should work with binary with raw option: warnings 1`] = `Array []`;
 
 exports[`loader should work with inline loader: assets 1`] = `
 Array [
