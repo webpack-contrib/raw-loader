@@ -17,7 +17,7 @@ export default (fixture, loaderOptions = {}, config = {}) => {
     module: {
       rules: [
         {
-          test: /\.txt$/i,
+          test: /\.(txt|pdf)$/i,
           rules: [
             {
               loader: path.resolve(__dirname, '../../src'),
