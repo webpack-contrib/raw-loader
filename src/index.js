@@ -1,12 +1,12 @@
 import { getOptions } from 'loader-utils';
-import validateOptions from 'schema-utils';
+import { validate } from 'schema-utils';
 
 import schema from './options.json';
 
 export default function rawLoader(source) {
   const options = getOptions(this);
 
-  validateOptions(schema, options, {
+  validate(schema, options, {
     name: 'Raw Loader',
     baseDataPath: 'options',
   });
